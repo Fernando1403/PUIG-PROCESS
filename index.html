@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PUIG PROCESS</title>
+</head>
+<body>
+
+<!-- ================= TABELA DE REFERÊNCIA ================= -->
+<table id="tabelaAprovadores"
+  style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
+
+  <thead>
+    <tr>
+      <th style="border:1px solid #000; padding:8px; background:#f2f2f2;">DPT Usuário</th>
+      <th style="border:1px solid #000; padding:8px; background:#f2f2f2;">Marca</th>
+      <th style="border:1px solid #000; padding:8px; background:#f2f2f2;">Gerência &lt; 5000</th>
+      <th style="border:1px solid #000; padding:8px; background:#f2f2f2;">Diretoria (5000 – 30000)</th>
+      <th style="border:1px solid #000; padding:8px; background:#f2f2f2;">Diretoria OP &gt; 30000</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">CH</td><td style="border:1px solid #000;">Carlos Henrique</td><td style="border:1px solid #000;">Fernanda Lopes</td><td style="border:1px solid #000;">Ricardo Menezes</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">Rabanne</td><td style="border:1px solid #000;">Mariana Costa</td><td style="border:1px solid #000;">Paula Nogueira</td><td style="border:1px solid #000;">Eduardo Pacheco</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">JPG</td><td style="border:1px solid #000;">Felipe Araújo</td><td style="border:1px solid #000;">Bruno Azevedo</td><td style="border:1px solid #000;">Camila Farias</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">Nina</td><td style="border:1px solid #000;">Renata Pires</td><td style="border:1px solid #000;">Diego Martins</td><td style="border:1px solid #000;">Renata Cunha</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">Banderas</td><td style="border:1px solid #000;">Lucas Rocha</td><td style="border:1px solid #000;">Raissa Almeida</td><td style="border:1px solid #000;">Thiago Barreto</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">BNT</td><td style="border:1px solid #000;">Pedro Nascimento</td><td style="border:1px solid #000;">Juliana Farias</td><td style="border:1px solid #000;">Lucas Teixeira</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">Pen</td><td style="border:1px solid #000;">André Lopes</td><td style="border:1px solid #000;">Bianca Rangel</td><td style="border:1px solid #000;">Marcos Vinícius</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">Shakira</td><td style="border:1px solid #000;">Tatiana Moura</td><td style="border:1px solid #000;">Cláudio Rezende</td><td style="border:1px solid #000;">Patrícia Moreira</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">V&amp;L</td><td style="border:1px solid #000;">Rafael Cunha</td><td style="border:1px solid #000;">Daniela Ortiz</td><td style="border:1px solid #000;">André Salgado</td></tr>
+    <tr><td style="border:1px solid #000;">Marketing</td><td style="border:1px solid #000;">AD</td><td style="border:1px solid #000;">Gabriel Torres</td><td style="border:1px solid #000;">Flaviane Souza</td><td style="border:1px solid #000;">Gustavo Rangel</td></tr>
+
+    <tr><td style="border:1px solid #000;">Sell Out</td><td style="border:1px solid #000;">Sell Out</td><td style="border:1px solid #000;">Marina Albuquerque</td><td style="border:1px solid #000;">Otávio Freire</td><td style="border:1px solid #000;">Helena Costa</td></tr>
+    <tr><td style="border:1px solid #000;">Trade</td><td style="border:1px solid #000;">Trade</td><td style="border:1px solid #000;">Luisa Medrado</td><td style="border:1px solid #000;">Guizzo</td><td style="border:1px solid #000;">Felipe Rocha</td></tr>
+    <tr><td style="border:1px solid #000;">Comercial</td><td style="border:1px solid #000;">Comercial</td><td style="border:1px solid #000;">Juliana Torres</td><td style="border:1px solid #000;">Henrique Bastos</td><td style="border:1px solid #000;">Simone Prado</td></tr>
+    <tr><td style="border:1px solid #000;">SAC</td><td style="border:1px solid #000;">SAC</td><td style="border:1px solid #000;">Carolina Meireles</td><td style="border:1px solid #000;">Juliana Pires</td><td style="border:1px solid #000;">Renato Lima</td></tr>
+    <tr><td style="border:1px solid #000;">Digital</td><td style="border:1px solid #000;">Digital</td><td style="border:1px solid #000;">Laura Mendes</td><td style="border:1px solid #000;">Jessica Ramos</td><td style="border:1px solid #000;">Mariana Alves</td></tr>
+  </tbody>
+</table>
+
+<!-- ================= CONSULTA ================= -->
+<div style="margin-top:30px; padding:16px; border:1px solid #ccc; font-family:Arial, sans-serif; font-size:14px;">
+
+  <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:16px;">
+    <div style="display:flex; flex-direction:column; flex:1;">
+    <label for="">Usuario</label>
+    <input id="inpUsuario" placeholder="Usuário" style="padding:6px; flex:1;">
+    </div>
+    <div style="display:flex; flex-direction:column; flex:1;">
+    <label for="">DPT</label>
+    <select id="selDpt" style="padding:6px; flex:1;">
+      <option value="">DPT</option>
+      <option>Marketing</option>
+      <option>Digital</option>
+      <option>Trade</option>
+      <option>Comercial</option>
+      <option>SAC</option>
+    </select>
+    </div>
+
+    <div style="display:flex; flex-direction:column; flex:1;">
+    <label for="">Marca</label>
+    <select id="selMarca" style="padding:6px; flex:1;">
+      <option value="">Marca</option>
+      <option>CH</option><option>Rabanne</option><option>JPG</option><option>Nina</option>
+      <option>Banderas</option><option>BNT</option><option>Pen</option><option>Shakira</option>
+      <option>V&L</option><option>AD</option><option>Sell Out</option>
+      <option>Trade</option><option>Comercial</option><option>SAC</option><option>Digital</option>
+    </select>
+    </div>
+
+    <div style="display:flex; flex-direction:column; flex:1;">
+    <label for="">Valor</label>
+    <input id="inpValor" type="number" placeholder="Valor" style="padding:6px; flex:1;">
+    </div>
+    <div style="display:flex; flex-direction:column; flex:1;">
+    <label for="">Aprovador Nivel 1</label>
+    <input id="respNivel1" readonly placeholder="Responsável Nível 1" style="padding:6px; flex:1; background:#f5f5f5;">
+    </div>
+    <div style="display:flex; flex-direction:column; flex:1;">
+    <label for="">Aprovador Nivel 2</label>
+    <input id="respNivel2" readonly placeholder="Responsável Nível 2" style="padding:6px; flex:1; background:#f5f5f5;">
+    </div>
+</div>
+
+  <div style="text-align:right;">
+    <button onclick="consultarAprovadores()"
+      style="padding:8px 20px; background:#0078d4; color:#fff; border:none; cursor:pointer;">
+      Consultar
+    </button>
+  </div>
+
+</div>
+
+<!-- ================= JS ================= -->
+<script>
+function consultarAprovadores() {
+  const dpt = document.getElementById("selDpt").value;
+  const marca = document.getElementById("selMarca").value;
+  const valor = Number(document.getElementById("inpValor").value);
+
+  const respNivel1 = document.getElementById("respNivel1");
+  const respNivel2 = document.getElementById("respNivel2");
+
+  respNivel1.value = "";
+  respNivel2.value = "";
+
+  if (!dpt || !marca || !valor) {
+    alert("Preencha DPT, Marca e Valor.");
+    return;
+  }
+
+  const linhas = document.querySelectorAll("#tabelaAprovadores tbody tr");
+  let encontrado = false;
+
+  linhas.forEach(linha => {
+    const cols = linha.querySelectorAll("td");
+    if (cols[0].innerText === dpt && cols[1].innerText === marca) {
+      const gerencia = cols[2].innerText;
+      const diretoria = cols[3].innerText;
+      const diretoriaOP = cols[4].innerText;
+
+      if (valor <= 5000) {
+        respNivel1.value = gerencia;
+        respNivel2.value = diretoria;
+      } else if (valor <= 30000) {
+        respNivel1.value = diretoria;
+        respNivel2.value = diretoriaOP;
+      } else {
+        respNivel1.value = diretoriaOP;
+        respNivel2.value = "";
+      }
+
+      encontrado = true;
+    }
+  });
+
+  if (!encontrado) {
+    alert("Nenhuma combinação encontrada.");
+  }
+}
+</script>
+
+</body>
+</html>
